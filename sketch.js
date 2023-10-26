@@ -12,9 +12,9 @@ function draw() {
   // map = mapea el valor del ruidp
   //calculo de la posicion horizontal
   let x = map(noise(xoff + 100), 0, 1, 0, width); //La función noise(xoff) genera un valor de ruido Perlin en función de la variable xoff. Luego, el valor se mapea a un valor dentro del rango de 0 a width (ancho del lienzo). Esto controla la posición horizontal del punto que se mueve en función del ruido.
-  let y = map(noise(xoff + 100), 0, 1, 0, height); // se genera un valor de ruido Perlin utilizando xoff incrementado en una cantidad grande (1000000) para obtener un patrón diferente. El valor se mapea al rango de 0 a height (altura del lienzo), controlando así la posición vertical del punto.
+  let y = map(noise(xoff + 500), 0, 1, 0, height); // se genera un valor de ruido Perlin utilizando xoff incrementado en una cantidad grande (1000000) para obtener un patrón diferente. El valor se mapea al rango de 0 a height (altura del lienzo), controlando así la posición vertical del punto.
   // let tamñ = random(20, 30);
-  console.log(x);
+  // console.log(x);
   let tamñ = map(noise(xoff), 0, 1, 5, 100);
   // de 5 a 50 el tamaño crece a la derecha y disminuye a la izquierda
   // let tamñ = noise(xoff), 0, 1, 5, 50;
